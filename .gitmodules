@@ -1,6 +1,0 @@
-[submodule "DECIMER-Image-Segmentation"]
-	path = DECIMER-Image-Segmentation
-	url = https://github.com/Kohulan/DECIMER-Image-Segmentation.git
-[submodule "DECIMER-Image_Transformer"]
-	path = DECIMER-Image_Transformer
-	url = https://github.com/Kohulan/DECIMER-Image_Transformer.git

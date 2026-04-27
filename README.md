@@ -30,8 +30,8 @@ molecular_recognition_skills/
 │   │   ├── predict.py        # 预测脚本
 │   │   └── train.py          # 训练脚本
 │   └── yolo_processor.py     # YOLO 处理脚本
-├── DECIMER-Image_Transformer/    # DECIMER Transformer (Git Submodule)
-├── DECIMER-Image-Segmentation/   # DECIMER Segmentation (Git Submodule)
+├── DECIMER-Image_Transformer/    # DECIMER Transformer (可选)
+├── DECIMER-Image-Segmentation/   # DECIMER Segmentation (可选)
 ├── models/                   # 模型文件目录 (不上传)
 ├── config.json               # 配置文件
 ├── requirements.txt          # Python 依赖包
@@ -49,11 +49,15 @@ molecular_recognition_skills/
 ### 1. 克隆仓库
 
 ```bash
-# 克隆主仓库及 submodules
-git clone --recursive https://github.com/zjf-arch/molecular_recognition_skills.git
+# 克隆主仓库
+git clone https://github.com/zjf-arch/molecular_recognition_skills.git
 
-# 如果已克隆主仓库，单独初始化 submodules
-git submodule update --init --recursive
+# 进入项目目录
+cd molecular_recognition_skills
+
+# 克隆 DECIMER 项目（可选）
+git clone https://github.com/Kohulan/DECIMER-Image_Transformer.git
+git clone https://github.com/Kohulan/DECIMER-Image-Segmentation.git
 ```
 
 ### 2. 系统要求
@@ -72,7 +76,11 @@ conda activate decimer
 # 安装主项目依赖
 pip install -r requirements.txt
 
-# 安装 DECIMER submodules 依赖
+# 安装 DECIMER 项目（可选，根据需要）
+# 方式1: 克隆到项目目录
+git clone https://github.com/Kohulan/DECIMER-Image_Transformer.git
+git clone https://github.com/Kohulan/DECIMER-Image-Segmentation.git
+
 cd DECIMER-Image_Transformer
 pip install -e .
 cd ..
@@ -80,6 +88,10 @@ cd ..
 cd DECIMER-Image-Segmentation
 pip install -e .
 cd ..
+
+# 方式2: 直接安装（不需要本地克隆）
+pip install decimer
+pip install decimer-segmentation
 ```
 
 ### 4. 下载模型文件
