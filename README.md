@@ -17,7 +17,7 @@
 ## 🗂️ 项目结构
 
 ```
-molecular-recognition-skills/
+molecular_recognition_skills/
 ├── scripts/                  # 核心处理脚本
 │   ├── simplified_integrated_processor.py   # 主处理脚本
 │   ├── decimer_processor.py                 # DECIMER 处理模块
