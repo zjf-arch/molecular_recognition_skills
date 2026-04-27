@@ -50,7 +50,7 @@ molecular-recognition-skills/
 
 ```bash
 # 克隆主仓库及 submodules
-git clone --recursive https://github.com/zjf-arch/molecular-recognition-skills.git
+git clone --recursive https://github.com/zjf-arch/molecular_recognition_skills.git
 
 # 如果已克隆主仓库，单独初始化 submodules
 git submodule update --init --recursive
@@ -409,4 +409,4 @@ al-chemist API 识别
 1. 查看详细文档: [RUNTIME_GUIDE.md](RUNTIME_GUIDE.md)
 2. 检查配置文件: `config.json`
 3. 查看日志文件: `logs/` 目录
-4. 提交 Issue: [GitHub Issues](https://github.com/zjf-arch/molecular-recognition-skills/issues)
+4. 提交 Issue: [GitHub Issues](https://github.com/zjf-arch/molecular_recognition_skills/issues)
