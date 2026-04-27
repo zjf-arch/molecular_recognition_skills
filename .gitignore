@@ -1,0 +1,95 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Large Model Files (>50MB)
+mole_classifier.pth
+models/
+*.pth
+*.pt
+*.onnx
+*.h5
+*.weights
+
+# YOLO Models
+yolo/detect/runs/
+yolo/detect/weights/
+yolo/detect/*.pt
+
+# Batch Processing Outputs
+yolo/batch_output/
+yolo/test_output/
+output/
+results/
+batch_results/
+
+# DECIMER Cache
+DECIMER-Image_Transformer/.data/
+DECIMER-Image-Segmentation/build/
+
+# Logs
+logs/
+*.log
+
+# Temporary Files
+*.tmp
+*.bak
+*.xlsx
+*.xls
+temp/
+tmp/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Config with sensitive data
+config.local.json
+.env
+.env.local
+
+# Keep these even if they have patterns above
+!requirements.txt
+!config.json

@@ -1,0 +1,25 @@
+{
+  "mineru": {
+    "conda_env": "mineru",
+    "python_path": "C:\\Users\\21600\\anaconda3\\envs\\mineru\\python.exe",
+    "magic_pdf_path": "C:\\Users\\21600\\anaconda3\\envs\\mineru\\Scripts\\magic-pdf.exe",
+    "models_path": "D:\\skills\\models"
+  },
+  "alchemist": {
+    "api_url": "https://api-ocsr.alchemist.iresearch.net.cn/ocsr/",
+    "headers": {
+      "X-API-Version": "1.0",
+      "Content-Type": "application/json"
+    }
+  },
+  "paths": {
+    "patents_dir": "D:\\skills\\patents",
+    "molecular_images_dir": "D:\\skills\\molecular_images",
+    "results_dir": "D:\\skills\\results",
+    "logs_dir": "D:\\skills\\logs"
+  },
+  "output": {
+    "table_format": "xlsx",
+    "include_images_in_table": true
+  }
+}
